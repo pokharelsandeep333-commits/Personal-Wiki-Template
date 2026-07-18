@@ -23,5 +23,5 @@ Drafts/
 
 
 
-# Allow Smart Environment folder to sync for Semantic Search
-!.smart-env
+# Prevent Smart Environment folder from syncing (contains personal embeddings)
+.smart-env/
