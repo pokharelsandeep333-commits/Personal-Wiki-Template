@@ -26,13 +26,15 @@ git clone https://github.com/your-username/llm-wiki-template.git
 2. Open Obsidian and select **"Open folder as vault"**.
 3. Select the folder you just cloned.
 
-### 3. Smart Plugins
-This template is configured to work with advanced AI tools. If you use plugins for Obsidian, this vault's `.obsidian` folder is prepped for tools like:
-* **Smart Connections / Smart Context:** For semantic search and connecting your notes using AI embeddings.
-* **Smart ChatGPT:** To chat directly with your vault.
-* **Local REST API:** To allow external agents to interface with your Obsidian environment securely.
+### 3. Smart Plugins & AI Capabilities
+This template is configured to work with advanced AI community plugins (such as **Smart Connections**, **Smart Context**, and **Smart ChatGPT**). 
 
-*(Note: These are just the configurations; you can enable or disable them in your Community Plugins settings in Obsidian).*
+To enable the full semantic search and AI connection features:
+1. Open Obsidian **Settings** > **Community Plugins**.
+2. Turn off "Safe Mode" if prompted, and enable the Smart plugins that are pre-installed in this vault.
+3. Once enabled, the Smart plugin will automatically generate a `.smart-env` folder in your vault. This folder will securely store your local vector embeddings and AI configuration data.
+
+*(Note: Do not commit the generated `.smart-env` folder to a public repository if it contains your personal embeddings! The provided `.gitignore` handles this automatically by only allowing the folder but you should still be careful).*
 
 ---
 
