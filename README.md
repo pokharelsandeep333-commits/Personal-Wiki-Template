@@ -33,12 +33,18 @@ pip install -r requirements.txt
 ```
 
 ### 4. Smart Plugins & AI Capabilities
-This template is configured to work with advanced AI community plugins (such as **Smart Connections**, **Smart Context**, and **Smart ChatGPT**). 
+This template is configured to use advanced AI community plugins (such as **Smart Connections**, **Smart Context**, and **Smart ChatGPT**). 
 
-To enable the full semantic search and AI connection features:
+For security reasons (to prevent leaking API keys and local AI configurations), the plugin files are **not** bundled in this repository. You must install them manually:
+
 1. Open Obsidian **Settings** > **Community Plugins**.
-2. Turn off "Safe Mode" if prompted, and enable the Smart plugins that are pre-installed in this vault.
-3. Once enabled, the Smart plugin will automatically generate a `.smart-env` folder in your vault. This folder will securely store your local vector embeddings and AI configuration data.
+2. Turn off "Safe Mode" if prompted.
+3. Click **Browse** and search for the following plugins, then **Install** and **Enable** them:
+   - `Smart Connections`
+   - `Smart Context`
+   - `Smart ChatGPT`
+   - `Local REST API` (if you are using local LLM agents)
+4. Once enabled, the Smart plugins will automatically generate a `.smart-env` folder in your vault. This folder will securely store your local vector embeddings and AI configuration data.
 
 *(Note: Do not commit the generated `.smart-env` folder to a public repository if it contains your personal embeddings! The provided `.gitignore` handles this automatically by only allowing the folder but you should still be careful).*
 
