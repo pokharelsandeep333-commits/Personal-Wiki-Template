@@ -1,7 +1,7 @@
 import os
 import json
 
-root_dir = r"C:\Users\DSU\OneDrive - Dakota State University\Obsidian Vault\LLM-Wiki\Raw\Sources"
+root_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), r"Raw\Sources")
 large_files = []
 
 for dirpath, _, filenames in os.walk(root_dir):
@@ -12,7 +12,7 @@ for dirpath, _, filenames in os.walk(root_dir):
             if size > 46080:
                 large_files.append({"file": full_path, "size": size})
 
-out_path = r"C:\Users\DSU\OneDrive - Dakota State University\Obsidian Vault\LLM-Wiki\scripts\large_files.json"
+out_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), r"scripts\large_files.json")
 with open(out_path, "w", encoding="utf-8") as out:
     json.dump(large_files, out, indent=2)
 

@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Running Pre-Commit Checks..."
+python scripts/wiki_tool.py build || exit 1
+python scripts/wiki_tool.py lint || exit 1
+python scripts/wiki_tool.py source-lint || exit 1
+python scripts/audit_public.py || exit 1
+git add Wiki/catalog.jsonl
+echo "Pre-commit passed."

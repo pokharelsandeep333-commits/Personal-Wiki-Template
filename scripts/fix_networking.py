@@ -1,7 +1,7 @@
 import os
 import re
 
-path = r"C:\Users\DSU\OneDrive - Dakota State University\Obsidian Vault\LLM-Wiki\Raw\Sources\Learn Networking In 25 MINUTES Crash Course  Networking Fundamentals + Cloud Networking Concepts.md"
+path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), r"Raw\Sources\Learn Networking In 25 MINUTES Crash Course  Networking Fundamentals + Cloud Networking Concepts.md")
 with open(path, "r", encoding="utf-8") as f:
     content = f.read()
 

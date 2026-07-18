@@ -1,8 +1,8 @@
 import os
 
 files = [
-    (r"C:\Users\DSU\OneDrive - Dakota State University\Obsidian Vault\LLM-Wiki\Raw\Sources\SandeepCloudServer\.agents\AGENTS.md", "SandeepCloud Agent Rules"),
-    (r"C:\Users\DSU\OneDrive - Dakota State University\Obsidian Vault\LLM-Wiki\Raw\Sources\SandeepCloudServer\.agents\PROJECT_LOG.md", "SandeepCloud Project Log")
+    (os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), r"Raw\Sources\ExampleSourceFolder\.agents\AGENTS.md"), "ExampleProject Agent Rules"),
+    (os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), r"Raw\Sources\ExampleSourceFolder\.agents\PROJECT_LOG.md"), "ExampleProject Project Log")
 ]
 
 for path, title in files:
@@ -13,7 +13,7 @@ for path, title in files:
     if not content.startswith("---"):
         fm = f"""---
 Title: "{title}"
-Reference: "[[SandeepCloud Project Architecture]]"
+Reference: "[[ExampleProject Project Architecture]]"
 ContentType:
   - "markdown"
 Created: 2026-07-10

@@ -2,8 +2,8 @@ import os
 import glob
 import re
 
-raw_dir = r"C:\Users\DSU\OneDrive - Dakota State University\Obsidian Vault\LLM-Wiki\Raw\Sources"
-wiki_dir = r"C:\Users\DSU\OneDrive - Dakota State University\Obsidian Vault\LLM-Wiki\Wiki"
+raw_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), r"Raw\Sources")
+wiki_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "Wiki")
 
 # Find all markdown files in Raw/Sources
 raw_files = []

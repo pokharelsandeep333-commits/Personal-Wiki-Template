@@ -1,6 +1,6 @@
 import os
 
-folder = r"C:\Users\DSU\OneDrive - Dakota State University\Obsidian Vault\LLM-Wiki\Raw\Sources\sandeepcloudserver"
+folder = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), r"Raw\Sources\example_source_folder")
 files = os.listdir(folder)
 for file in files:
     if not file.endswith(".md"): continue

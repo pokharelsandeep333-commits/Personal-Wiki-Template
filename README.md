@@ -18,7 +18,7 @@ A fully structured, intelligent Obsidian Vault template designed for AI Agentic 
 ### 1. Clone the Repository
 Download this repository to your local machine:
 ```bash
-git clone https://github.com/your-username/llm-wiki-template.git
+git clone https://github.com/pokharelsandeep333-commits/Personal-Wiki-Template.git
 ```
 
 ### 2. Open in Obsidian
@@ -26,7 +26,13 @@ git clone https://github.com/your-username/llm-wiki-template.git
 2. Open Obsidian and select **"Open folder as vault"**.
 3. Select the folder you just cloned.
 
-### 3. Smart Plugins & AI Capabilities
+### 3. Install Python Dependencies (Optional)
+If you plan to use the automation scripts in the `scripts/` folder (like the PDF watcher), you will need Python installed. Install the dependencies by running:
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Smart Plugins & AI Capabilities
 This template is configured to work with advanced AI community plugins (such as **Smart Connections**, **Smart Context**, and **Smart ChatGPT**). 
 
 To enable the full semantic search and AI connection features:

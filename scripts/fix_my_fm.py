@@ -1,7 +1,7 @@
 import os
 import re
 
-folder = r"C:\Users\DSU\OneDrive - Dakota State University\Obsidian Vault\LLM-Wiki\Wiki\Concepts"
+folder = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), r"Wiki\Concepts")
 files_to_fix = [
     "Kubernetes Architecture.md",
     "Kubernetes Pods.md",
