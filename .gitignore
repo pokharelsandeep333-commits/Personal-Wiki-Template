@@ -1,0 +1,27 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Obsidian specific
+.obsidian/workspace*.json
+.obsidian/plugins/
+.obsidian/cache/
+.obsidian/logs/
+.obsidian/core-plugins-migration.json
+
+# Folder exclusions
+Raw/Files/*
+!Raw/Files/.gitkeep
+Drafts/
+
+
+
+
+# Allow Smart Environment folder to sync for Semantic Search
+!.smart-env
