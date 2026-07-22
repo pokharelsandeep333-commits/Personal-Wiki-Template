@@ -92,7 +92,7 @@ flowchart LR
 3. **Review:** The agent processes the source, extracts core ideas, and generates perfectly formatted files in `Wiki/Concepts/` and `Wiki/Entities/`.
 4. **Explore:** Everything is interlinked automatically using Obsidian's `[[wikilinks]]`.
 
-*(We've included an `Agentic Workflows` concept and an `Example Source` in the vault so you can see how they are structured!)*
+*(I've included an `Agentic Workflows` concept and an `Example Source` in the vault so you can see how they are structured!)*
 
 ---
 
