@@ -71,7 +71,7 @@ This Wiki uses a strict **Raw → Wiki** pipeline to maintain high-quality knowl
 
 ```mermaid
 flowchart LR
-    A[Raw/ Dump] -->|Agent Ingestion| B((AI Agent))
+    A[Raw/Sources] -->|Agent Ingestion| B((AI Agent))
     B -->|Extract Concepts| C(Wiki/Concepts/)
     B -->|Extract Entities| D(Wiki/Entities/)
     E[Schema/] -.->|Rules| B
