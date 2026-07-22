@@ -82,8 +82,8 @@ flowchart LR
     style E fill:#444,stroke:#ff9900,stroke-width:1px,color:#fff,stroke-dasharray: 5 5
 ```
 
-* **`Raw/`**: Your dumping ground. Put raw PDFs, articles, web clippings, and rough thoughts here.
-* **`Wiki/`**: The compiled, polished truth. AI agents read your `Raw` files and extract entities, concepts, and topics into the `Wiki`.
+* **`Raw/Sources/`**: Your dumping ground. Put raw PDFs, articles, web clippings, and rough thoughts here.
+* **`Wiki/`**: The compiled, polished truth. AI agents read your `Raw/Sources/` files and extract entities, concepts, and topics into the `Wiki`.
 * **`Schema/`**: The rulebook for how notes should be formatted. Agents read this before making changes.
 
 ### Example Workflow
@@ -108,4 +108,4 @@ Simply tell your AI assistant:
 
 OR
 
-> *"Please ingest the new PDF I dropped in the Raw folder using the `llm-wiki-ingest` skill."*
+> *"Please ingest the new PDF I dropped in the Raw/Sources folder using the `llm-wiki-ingest` skill."*
