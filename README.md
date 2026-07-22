@@ -3,7 +3,9 @@
 [![Obsidian](https://img.shields.io/badge/Obsidian-7C3AED?style=for-the-badge&logo=obsidian&logoColor=white)](https://obsidian.md/)
 [![AI Powered](https://img.shields.io/badge/AI_Powered-000000?style=for-the-badge&logo=openai&logoColor=white)](#)
 
-A fully structured, intelligent Obsidian Vault template designed for AI Agentic workflows. This repository serves as a powerful knowledge base that your LLM assistants can ingest, maintain, and query autonomously.
+Welcome to the **Agentic LLM-Wiki Template**, a carefully structured [Obsidian](https://obsidian.md/) vault designed to act as a shared, permanent memory layer for both you and your AI assistants. The core reason for building an LLM-Wiki is to solve the problem of AI tools losing context or working in isolation. By giving your agents a unified "second brain" powered by knowledge graphs and structured data, they can continuously learn, store, and retrieve information alongside you without ever forgetting the important details.
+
+To make this work seamlessly, the vault separates your messy, unstructured thoughts from polished, verified knowledge. By enforcing simple rules and schemas, it provides AI agents with the exact structure they need to autonomously ingest raw documents, connect related concepts, and query your knowledge base. The result is a clean, organized, and powerful personal wiki that your AI can maintain and explore for you, preventing your notes from ever turning into a chaotic mess.
 
 ## ✨ Features
 * **Structured Knowledge Base:** Strict separation of `Raw/` sources from compiled `Wiki/` knowledge.
